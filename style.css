@@ -56,4 +56,20 @@ textarea {
   font-size: 20px;
   margin: 5px;
   font-family: Work Sans;
+  resize: none;
+  overflow: hidden;
+}
+
+p {
+  text-align: left;
+  border: none;
+  padding-bottom: 45px;
+  resize: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-family: Work Sans;
+
+}
+#div-p{
+  
 }
