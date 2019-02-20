@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+
+#root{
+  background-color:rgb(173, 197, 240);
+  background-position: center;
+  border-radius: 20px;
+  padding: 10px 0px 10px 0px;
+  margin: 30px auto;
+  text-align: center;
+  width: 800px;
+ }
+
+
+body{
+  font-size: 10px;
+  font-family: 'Work Sans', sans-serif;
+  color: rgb(74, 12, 243);
+  font-weight: 400;
+  text-align: center;
+  background-color: #dbdadd;
+}
+
+button {
+  background-color: #dbdadd;
+  font-family: 'Work Sans', sans-serif;
+  font-size:20px;
+}
+
+h1 {
+  font-weight: 500;
+  padding: 10px;
+  font-size: 30px;
+  background-color: rgb(74, 12, 243);
+  color: #fff;
+}
+
+label {
+  font-size:20px;
+ }
+
+input {
+ height:30px;
+ padding:15px;
+ width: 50%;
+ text-align: left
+}
+
+textarea {
+  width: 500px;
+  border: none;
+  border-bottom: solid 1px gray;
+  padding-bottom: 45px;
+  resize: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  margin: 5px;
+  font-family: Work Sans;
+}

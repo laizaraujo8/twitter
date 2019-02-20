@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Twitter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root">
+    <h1><strong>Twitter</strong></h1><br>
+    <form>
+      <label>Mensagem</label><br>
+      <textarea placeholder="O que está acontecendo?" rows="3" type="text" value="" id="texto"
+        onkeydown="validar()"></textarea><br><br>
+      <button name="twitar" onclick="twittar()" disabled="disabled" id="botaoEnviar">twittar</button> <br><br>
+      <button onclick="myFunction()">Click me</button>
+    </form>
+
+    <ul id="twiters">
+      <li>" "</li>
+    </ul>
+    
+
+
+    <script src="twitter.js"></script>
+
+</body>
+
+</html>
