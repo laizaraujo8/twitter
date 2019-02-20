@@ -71,5 +71,14 @@ p {
 
 }
 #div-p{
-  
+
 }
+
+span {
+  text-align: left;
+  border: none;
+  padding-bottom: 45px;
+  resize: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-family: Work Sans;

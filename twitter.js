@@ -5,7 +5,8 @@ document.getElementById("botaoEnviar").addEventListener("click", twittar);
 
 function validar() {
   let inserir = document.getElementById("texto").value;
-  console.log(inserir);
+  let contador= 140 - inserir.length;
+
   if (inserir.length > 0 && inserir.length <= 140) {
     document.getElementById("botaoEnviar").removeAttribute("disabled");
   }
@@ -13,7 +14,8 @@ function validar() {
   if (inserir.length === 0 || inserir.length > 140) {
     document.getElementById("botaoEnviar").setAttribute("disabled", "disabled");
   }
-console.log("validar")
+document.getElementById("contador").innerHTML=contador;
+
 }
 function twittar() {
   let inserir = document.getElementById("texto").value;
@@ -21,7 +23,5 @@ function twittar() {
   let pText =  document.createTextNode(inserir);
   p.appendChild(pText);
   document.getElementById("div-p").appendChild(p);
-  
-
-  //document.getElementById("enviado").innerHTML=inserir;
 }
+  
