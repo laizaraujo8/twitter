@@ -2,7 +2,7 @@
 document.getElementById("texto").addEventListener("keyup", validar);
 document.getElementById("botaoEnviar").addEventListener("click", twittar);
 document.getElementById("texto").addEventListener('keydown', autoSize);
-document.getElementById("contador").addEventListener('keyup', trocaCor);
+//document.getElementById("contador").addEventListener('keyup', trocaCor);
 
 function autoSize() {
   let textarea = document.getElementById("texto");
@@ -24,7 +24,7 @@ function validar() {
   document.getElementById("contador").innerHTML = contador;
 
   if (inserir.length >= 120 && inserir.length <= 129) {
-    document.getElementById("contador").style.color = "green";
+    document.getElementById("contador").style.color = "DarkOrange";
   }
 
   else if (inserir.length >= 130 && inserir.length <= 140) {
@@ -36,24 +36,15 @@ function validar() {
   }
 
 function twittar() {
+  console.log("entrou")
   let inserir = document.getElementById("texto").value;
   var p = document.createElement('p');
+  let twitada = document.getElementById("div-p");
+  var p2 = twitada.getElementsByTagName('p')[0];
+  console.log(p2);
   let pText = document.createTextNode(inserir);
   p.appendChild(pText);
   document.getElementById("div-p").appendChild(p);
+  twitada.insertBefore(p, p2);
 }
 
-/*function trocaCor() {
-  /*let inserir = document.getElementById("texto").value;
-  if (inserir.length <= 140 && inserir.length >= 20) {
-    document.getElementById("contador").style.color = "blue";
-  }
-  if (inserir.length <= 19 && inserir.length >= 10) {
-    document.getElementById("contador").style.color = "orange";
-  }
-  if (inserir.length <= 9) {
-    document.getElementById("contador").style.color = "red";
-  }
-  //document.getElementById("contador").innerHTML = trocaCor;
-
-}*/

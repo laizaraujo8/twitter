@@ -8,6 +8,7 @@
   padding: 10px 0px 10px 0px;
   margin: 30px auto;
   text-align: center;
+  align-items: center;
   width: 800px;
  }
 
@@ -36,7 +37,7 @@ h1 {
 }
 
 label {
-  font-size:20px;
+  font-size:25px;
  }
 
 input {
@@ -69,7 +70,15 @@ p {
   font-family: Work Sans;
 
 }
-#div-p{
+#div-p p{
+  background-color: white;
+  border-bottom: solid 1px gray;
+  width: 750px;
+  height: auto;
+  word-wrap: break-word;
+  margin: 10px;
+  justify-content: center;
+  padding: 10px;
 
 }
 
@@ -87,3 +96,7 @@ span {
   font-family: sans-serif;
   font-style: bold;
 }
+
+  #div-p{
+    align-items: center;
+  }
