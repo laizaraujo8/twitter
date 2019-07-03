@@ -1,8 +1,12 @@
 
 document.getElementById("texto").addEventListener("keyup", validar);
-document.getElementById("botaoEnviar").addEventListener("click", twittar);
+document.getElementById("botaoEnviar").addEventListener("click", 
+(event) => {
+  event.preventDefault();
+  twittar()
+});
 document.getElementById("texto").addEventListener('keydown', autoSize);
-//document.getElementById("contador").addEventListener('keyup', trocaCor);
+
 
 function autoSize() {
   let textarea = document.getElementById("texto");
@@ -36,15 +40,15 @@ function validar() {
   }
 
 function twittar() {
-  console.log("entrou")
   let inserir = document.getElementById("texto").value;
   var p = document.createElement('p');
   let twitada = document.getElementById("div-p");
   var p2 = twitada.getElementsByTagName('p')[0];
-  console.log(p2);
+
   let pText = document.createTextNode(inserir);
   p.appendChild(pText);
   document.getElementById("div-p").appendChild(p);
   twitada.insertBefore(p, p2);
+  document.getElementsByid('texto').value="";
 }
 
