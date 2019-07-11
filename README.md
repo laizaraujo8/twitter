@@ -13,3 +13,7 @@ A adaptação do design é livre.
 - Um contador regressivo que mostre o quantidade de caracteres.
 - Alteração na cor do contador quando ultrapassar 120 e 130 caracteres.
 - Contador negativo quando ultrapassar 140 caracteres.
+
+# Layout
+
+![Modelo](images/twitter.jpg)
